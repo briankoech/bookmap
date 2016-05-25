@@ -1,0 +1,27 @@
+{
+  "name": "bookmap",
+  "version": "1.0.0",
+  "description": "Bookshelf app usong google app engine",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/briankoech/bookmap.git"
+  },
+  "keywords": [
+    "bookshelf",
+    "bookmap",
+    "novels"
+  ],
+  "author": "Brian Koech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/briankoech/bookmap/issues"
+  },
+  "homepage": "https://github.com/briankoech/bookmap#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
