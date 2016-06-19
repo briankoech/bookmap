@@ -4,6 +4,9 @@
   "description": "Bookshelf app usong google app engine",
   "main": "server.js",
   "scripts": {
+    "start": "hjs-dev-server",
+    "prebuild": "rm -rf public && mkdir public",
+    "build": "NODE_ENV=production webpack",
     "test": "npm test"
   },
   "repository": {
@@ -22,6 +25,24 @@
   },
   "homepage": "https://github.com/briankoech/bookmap#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "enhanced-resolve": "^2.2.2",
+    "express": "^4.13.4",
+    "hjs-webpack": "^8.3.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "postcss-loader": "^0.9.1",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.1.1"
   }
 }
